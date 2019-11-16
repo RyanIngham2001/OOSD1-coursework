@@ -1,10 +1,10 @@
 package Part1Only;
 
-public class Stockitem {
+public class StockItem {
     // Declare class self variables
     private String fixedStockCode;
-    int quantity;
-    double price;
+    private int quantity;
+    private double price;
 
     // Constructor with arguments to set variables
     public StockItem(String stockCode, int quantity, double price) {
@@ -31,6 +31,15 @@ public class Stockitem {
 
     public double getPrice() {
         return price;
+    }
+
+    public double getPriceVAT() {
+        double vat = getVat();
+        double price = getPrice();
+
+        double priceAfterVAT = price * (1 + vat);
+        return priceAfterVAT;
+
     }
 
     public String getStockName() {
@@ -66,6 +75,19 @@ public class Stockitem {
             quantity -= soldQuantity;
             return true;
         }
+    }
+
+    public double getVat() {
+        double standardVat = 17.5;
+        return standardVat;
+    }
+
+    public String toString() {
+        String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +
+                "\nStock Description : " + getStockDescription() + "\nQuantity in stock : " + getQuantity() +
+                "\nPrice before VAT : " + getPrice() + "Price after VAT : " + getPriceVAT();
+        return returnedString;
+
     }
 
 
