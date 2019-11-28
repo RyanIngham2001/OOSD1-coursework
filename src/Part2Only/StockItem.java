@@ -1,4 +1,4 @@
-package Part1Only;
+package Part2Only;
 
 public class StockItem {
     // Declare class self variables
