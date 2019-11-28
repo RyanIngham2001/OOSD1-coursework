@@ -78,7 +78,7 @@ public class StockItem {
     }
 
     public double getVat() {
-        double standardVat = 17.5;
+        double standardVat = 0.175;
         return standardVat;
     }
 

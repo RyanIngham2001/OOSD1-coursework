@@ -19,5 +19,11 @@ public class NavSys extends Part2Only.StockItem {
 
     // TODO : override toString method using super()
 
+    public String classToString() {
+        String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +
+                "\nStock Description : " + getStockDescription() + "\nQuantity in stock : " + getQuantity() +
+                "\nPrice before VAT : " + getPrice() + "\nPrice after VAT : " + getPriceVAT();
+        return returnedString;
+    }
 
 }
