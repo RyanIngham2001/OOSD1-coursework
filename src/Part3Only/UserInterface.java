@@ -5,10 +5,6 @@ import java.util.Arrays;
 
 public class UserInterface {
 
-/* TODO : FINISH SWITCH
-          FINISH CUSTOM CLASSES
-*/
-
 
 
     public static void main(String[] args) {
