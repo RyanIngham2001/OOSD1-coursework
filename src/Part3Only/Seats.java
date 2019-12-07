@@ -1,22 +1,22 @@
 package Part3Only;
 
-public class Engine extends StockItem{
-    private int horsepower;
+public class Seats extends StockItem {
+    String material;
 
-    public Engine(String stockCode, int quantity, double price, int horsepower) {
-
+    public Seats(String stockCode, int quantity, double price, String material) {
         super(stockCode, quantity, price);
-        this.horsepower = horsepower;
+        this.material = material;
     }
 
-    public String getStockName() {return "Engine";}
+    public String getStockName() { return "Car seats";}
 
-    public String getStockDescription() {return "car engine";}
+    public String getStockDescription() { return "Seats for a car";}
 
     public String classToString() {
         String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +
                 "\nStock Description : " + getStockDescription() + "\nQuantity in stock : " + getQuantity() +
                 "\nPrice before VAT : " + getPrice() + "\nPrice after VAT : " + getPriceVAT();
         return returnedString;
+
     }
 }

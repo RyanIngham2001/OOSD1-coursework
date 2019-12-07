@@ -1,11 +1,10 @@
 package Part3Only;
 
-public class NavSys extends Part2Only.StockItem {
+public class NavSys extends StockItem {
 
     public NavSys(String stockCode, int quantity, double price) {
 
         super(stockCode, quantity, price);
-
 
     }
 
@@ -17,7 +16,6 @@ public class NavSys extends Part2Only.StockItem {
         return "GeoVision Sat Nav";
     }
 
-    // TODO : override toString method using super()
 
     public String classToString() {
         String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +

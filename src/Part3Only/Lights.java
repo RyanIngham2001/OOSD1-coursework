@@ -1,17 +1,19 @@
 package Part3Only;
 
-public class Engine extends StockItem{
-    private int horsepower;
-
-    public Engine(String stockCode, int quantity, double price, int horsepower) {
-
+public class Lights extends StockItem {
+    double brightness;
+    public Lights(String stockCode, int quantity, double price, double brightness) {
         super(stockCode, quantity, price);
-        this.horsepower = horsepower;
+        this.brightness = brightness;
     }
 
-    public String getStockName() {return "Engine";}
+    public String getStockName() {
+        return "Car Lights";
+    }
 
-    public String getStockDescription() {return "car engine";}
+    public String getStockDescription() {
+        return "Lights for a car";
+    }
 
     public String classToString() {
         String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +

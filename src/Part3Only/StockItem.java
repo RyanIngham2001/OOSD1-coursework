@@ -85,7 +85,7 @@ public class StockItem {
     public String classToString() {
         String returnedString = "Stock Code : " + getFixedStockCode() + "\nStock Name : " + getStockName() +
                 "\nStock Description : " + getStockDescription() + "\nQuantity in stock : " + getQuantity() +
-                "\nPrice before VAT : " + getPrice() + "Price after VAT : " + getPriceVAT();
+                "\nPrice before VAT : " + getPrice() + "\nPrice after VAT : " + getPriceVAT();
         return returnedString;
 
     }
