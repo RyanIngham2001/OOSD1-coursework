@@ -120,15 +120,19 @@ public class UserInterface {
                         case 2:
                             System.out.println("How much stock to add : ");
                             items[choice].addStock(input.nextInt());
+                            break;
                         case 3:
                             System.out.println("How much stock to sell : ");
                             items[choice].sellStock(input.nextInt());
+                            break;
                         case 4:
                             System.out.println("Input value to set : ");
                             items[choice].setQuantity(input.nextInt());
+                            break;
                         case 5:
                             System.out.println("Input value to set : ");
                             items[choice].setPrice(input.nextDouble());
+                            break;
                     }
             }
         }
